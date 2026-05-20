@@ -33,6 +33,14 @@ export default function Home() {
     transition: 'opacity 0.6s ease, transform 0.6s ease',
   };
 
+  const svg_bank = '"<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>"';
+  const svg_fintech = '"<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="12" y1="2" x2="12" y2="22"/></svg>"';
+  const svg_compliance = '"<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>"';
+  const svg_monitoring = '"<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>"';
+  const svg_emmanuel = '"<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="#C8102E" stroke-width="1.5"/><rect x="22" y="22" width="20" height="20" rx="2" stroke="#C8102E" stroke-width="1.5"/><line x1="32" y1="12" x2="32" y2="22" stroke="#C8102E" stroke-width="1.5"/><line x1="32" y1="42" x2="32" y2="52" stroke="#C8102E" stroke-width="1.5"/><line x1="12" y1="32" x2="22" y2="32" stroke="#C8102E" stroke-width="1.5"/><line x1="42" y1="32" x2="52" y2="32" stroke="#C8102E" stroke-width="1.5"/><circle cx="32" cy="32" r="4" fill="#C8102E"/></svg>"';
+  const svg_sasha = '"<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="#C8102E" stroke-width="1.5"/><line x1="32" y1="18" x2="32" y2="46" stroke="#C8102E" stroke-width="1.5"/><line x1="20" y1="46" x2="44" y2="46" stroke="#C8102E" stroke-width="1.5"/><line x1="32" y1="22" x2="22" y2="30" stroke="#C8102E" stroke-width="1.5"/><line x1="32" y1="22" x2="42" y2="30" stroke="#C8102E" stroke-width="1.5"/><path d="M18 30 Q22 34 26 30" stroke="#C8102E" stroke-width="1.5" fill="none"/><path d="M38 30 Q42 26 46 30" stroke="#C8102E" stroke-width="1.5" fill="none"/></svg>"';
+  const svg_denis = '"<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="#C8102E" stroke-width="1.5"/><rect x="16" y="20" width="32" height="24" rx="2" stroke="#C8102E" stroke-width="1.5"/><polyline points="24,28 20,32 24,36" stroke="#C8102E" stroke-width="1.5" fill="none"/><polyline points="40,28 44,32 40,36" stroke="#C8102E" stroke-width="1.5" fill="none"/><line x1="29" y1="36" x2="35" y2="28" stroke="#C8102E" stroke-width="1.5"/></svg>"';
+
   return (
     <>
       <Head>
@@ -85,6 +93,25 @@ export default function Home() {
         <section id="overview" ref={setRef('overview')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 40px', position: 'relative' }}>
           
           <h1 style={{ fontFamily: '"Playfair Display", serif', fontSize: '80px', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, maxWidth: '800px', margin: 0 }}>The Fraud Detection Platform Built for Global Finance</h1>
+          <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" fill="none" style={{ position: 'absolute', right: '-100px', top: '50%', transform: 'translateY(-50%)', opacity: 0.08, pointerEvents: 'none' }}>
+            <circle cx="300" cy="300" r="200" stroke="#C8102E" strokeWidth="1"/>
+            <circle cx="300" cy="300" r="150" stroke="#C8102E" strokeWidth="1"/>
+            <circle cx="300" cy="300" r="100" stroke="#C8102E" strokeWidth="1"/>
+            <circle cx="300" cy="300" r="50" stroke="#C8102E" strokeWidth="1"/>
+            <line x1="100" y1="300" x2="500" y2="300" stroke="#C8102E" strokeWidth="1"/>
+            <line x1="300" y1="100" x2="300" y2="500" stroke="#C8102E" strokeWidth="1"/>
+            <line x1="158" y1="158" x2="442" y2="442" stroke="#C8102E" strokeWidth="1"/>
+            <line x1="442" y1="158" x2="158" y2="442" stroke="#C8102E" strokeWidth="1"/>
+            <circle cx="300" cy="300" r="6" fill="#C8102E"/>
+            <circle cx="300" cy="100" r="4" fill="#C8102E"/>
+            <circle cx="300" cy="500" r="4" fill="#C8102E"/>
+            <circle cx="100" cy="300" r="4" fill="#C8102E"/>
+            <circle cx="500" cy="300" r="4" fill="#C8102E"/>
+            <circle cx="158" cy="158" r="4" fill="#C8102E"/>
+            <circle cx="442" cy="158" r="4" fill="#C8102E"/>
+            <circle cx="158" cy="442" r="4" fill="#C8102E"/>
+            <circle cx="442" cy="442" r="4" fill="#C8102E"/>
+          </svg>
           
           <div style={{ display: 'flex', gap: '16px', marginTop: '48px' }}>
             <a href="#how-it-works" style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#FFFFFF', backgroundColor: '#C8102E', padding: '16px 36px', textDecoration: 'none', borderRadius: 0 }}>Explore the Platform</a>
@@ -149,6 +176,24 @@ export default function Home() {
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>COUNTERPARTY INTELLIGENCE</div>
           <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', lineHeight: 1.2, margin: 0, marginBottom: '48px', maxWidth: '900px' }}>Know who you are doing business with — before the transaction clears</h2>
           <p style={{ fontFamily: '"Inter", sans-serif', fontSize: '17px', color: '#888888', lineHeight: 1.8, margin: 0, marginBottom: '48px', maxWidth: '700px', textAlign: 'center' }}>Before any cross-border transaction is approved, the platform builds a complete risk profile of the counterparty. This includes sanctions screening, politically exposed person checks, corporate ownership structure analysis, and adverse media monitoring across global news sources.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="400" height="160" viewBox="0 0 400 160" fill="none" style={{ margin: '0 auto 40px', display: 'block', opacity: 0.6 }}>
+            <circle cx="200" cy="80" r="12" stroke="#C8102E" strokeWidth="1.5"/>
+            <circle cx="80" cy="40" r="8" stroke="#C8102E" strokeWidth="1.5"/>
+            <circle cx="80" cy="120" r="8" stroke="#C8102E" strokeWidth="1.5"/>
+            <circle cx="320" cy="40" r="8" stroke="#C8102E" strokeWidth="1.5"/>
+            <circle cx="320" cy="120" r="8" stroke="#C8102E" strokeWidth="1.5"/>
+            <circle cx="20" cy="80" r="6" stroke="#FFFFFF" strokeWidth="1" opacity="0.3"/>
+            <circle cx="380" cy="80" r="6" stroke="#FFFFFF" strokeWidth="1" opacity="0.3"/>
+            <line x1="200" y1="80" x2="80" y2="40" stroke="#C8102E" strokeWidth="1" strokeDasharray="4 4"/>
+            <line x1="200" y1="80" x2="80" y2="120" stroke="#C8102E" strokeWidth="1" strokeDasharray="4 4"/>
+            <line x1="200" y1="80" x2="320" y2="40" stroke="#C8102E" strokeWidth="1" strokeDasharray="4 4"/>
+            <line x1="200" y1="80" x2="320" y2="120" stroke="#C8102E" strokeWidth="1" strokeDasharray="4 4"/>
+            <line x1="80" y1="40" x2="20" y2="80" stroke="#FFFFFF" strokeWidth="1" opacity="0.2"/>
+            <line x1="80" y1="120" x2="20" y2="80" stroke="#FFFFFF" strokeWidth="1" opacity="0.2"/>
+            <line x1="320" y1="40" x2="380" y2="80" stroke="#FFFFFF" strokeWidth="1" opacity="0.2"/>
+            <line x1="320" y1="120" x2="380" y2="80" stroke="#FFFFFF" strokeWidth="1" opacity="0.2"/>
+            <circle cx="200" cy="80" r="6" fill="#C8102E"/>
+          </svg>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
             {['OFAC Screening', 'PEP Database', 'Adverse Media', 'Corporate Registry', 'Sanctions Lists'].map((badge) => (
               <div key={badge} style={{ backgroundColor: '#1A1A1A', border: '1px solid #C8102E', padding: '16px 24px', fontFamily: '"Inter", sans-serif', fontSize: '13px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.1em', borderRadius: 0 }}>{badge}</div>
@@ -200,13 +245,26 @@ export default function Home() {
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>WHO IT SERVES</div>
           <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '80px' }}>Built for the institutions that move money across borders</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', maxWidth: '1100px', width: '100%' }}>
-            {[{title:'International Banks',desc:'Full integration with core banking infrastructure. Real-time scoring on all SWIFT and SEPA transactions with automated SAR generation.'},{title:'Fintech Payment Companies',desc:'API-first integration for neobanks and payment processors. Lightweight SDK available for rapid deployment within existing transaction pipelines.'},{title:'Compliance Officers',desc:'A dedicated compliance dashboard surfaces flagged transactions, risk scores, and one-click case escalation tools.'},{title:'Cross-Border Monitoring Teams',desc:'Multi-jurisdiction monitoring with configurable risk thresholds per corridor, currency pair, and transaction type.'}].map((card) => (
-              <div key={card.title} style={{ backgroundColor: '#111111', borderTop: '3px solid #C8102E', padding: '40px 32px', borderRadius: 0 }}>
-                <div style={{ width: '24px', height: '24px', backgroundColor: '#C8102E', marginBottom: '24px' }} />
-                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '18px', fontWeight: 600, color: '#FFFFFF', marginBottom: '12px' }}>{card.title}</div>
-                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#888888', lineHeight: 1.7 }}>{card.desc}</div>
+<div style={{ backgroundColor: '#111111', borderTop: '3px solid #C8102E', padding: '40px 32px', borderRadius: 0 }}>
+                <div style={{ width: '48px', height: '48px', marginBottom: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: 'svg_bank' }} />
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '18px', fontWeight: 600, color: '#FFFFFF', marginBottom: '12px' }}>International Banks</div>
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#888888', lineHeight: 1.7 }}>Full integration with core banking infrastructure. Real-time scoring on all SWIFT and SEPA transactions with automated SAR generation.</div>
               </div>
-            ))}
+              <div style={{ backgroundColor: '#111111', borderTop: '3px solid #C8102E', padding: '40px 32px', borderRadius: 0 }}>
+                <div style={{ width: '48px', height: '48px', marginBottom: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: 'svg_fintech' }} />
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '18px', fontWeight: 600, color: '#FFFFFF', marginBottom: '12px' }}>Fintech Payment Companies</div>
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#888888', lineHeight: 1.7 }}>API-first integration for neobanks and payment processors. Lightweight SDK available for rapid deployment within existing transaction pipelines.</div>
+              </div>
+              <div style={{ backgroundColor: '#111111', borderTop: '3px solid #C8102E', padding: '40px 32px', borderRadius: 0 }}>
+                <div style={{ width: '48px', height: '48px', marginBottom: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: 'svg_compliance' }} />
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '18px', fontWeight: 600, color: '#FFFFFF', marginBottom: '12px' }}>Compliance Officers</div>
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#888888', lineHeight: 1.7 }}>A dedicated compliance dashboard surfaces flagged transactions, risk scores, and one-click case escalation tools.</div>
+              </div>
+              <div style={{ backgroundColor: '#111111', borderTop: '3px solid #C8102E', padding: '40px 32px', borderRadius: 0 }}>
+                <div style={{ width: '48px', height: '48px', marginBottom: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: 'svg_monitoring' }} />
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '18px', fontWeight: 600, color: '#FFFFFF', marginBottom: '12px' }}>Cross-Border Monitoring Teams</div>
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#888888', lineHeight: 1.7 }}>Multi-jurisdiction monitoring with configurable risk thresholds per corridor, currency pair, and transaction type.</div>
+              </div>
           </div>
         </section>
 
@@ -214,15 +272,30 @@ export default function Home() {
           
           <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#0A0A0A', textAlign: 'center', margin: 0, marginBottom: '80px' }}>Our Team</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', maxWidth: '900px', width: '100%' }}>
-            {[{role:'Role A',name:'Emmanuel',desc:'Business Logic',resp:'Owns the product logic, use case definition, and decision framework.'},{role:'Role B',name:'Sasha',desc:'Workflow & Risk',resp:'Designs the compliance workflow, risk scoring thresholds, and escalation protocols.'},{role:'Role C',name:'Denis',desc:'Prototype & Tools',resp:'Builds and deploys the live prototype and manages the GitHub repository.'}].map((card) => (
-              <div key={card.name} style={{ backgroundColor: '#FFFFFF', border: '1px solid #0A0A0A', borderTop: '3px solid #C8102E', padding: '48px 32px', borderRadius: 0 }}>
-                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.15em' }}>{card.role}</div>
-                <div style={{ fontFamily: '"Playfair Display", serif', fontSize: '28px', fontWeight: 700, color: '#0A0A0A', marginTop: '12px' }}>{card.name}</div>
-                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#888888', marginTop: '8px' }}>{card.desc}</div>
+<div style={{ backgroundColor: '#FFFFFF', border: '1px solid #0A0A0A', borderTop: '3px solid #C8102E', padding: '48px 32px', borderRadius: 0 }}>
+                <div style={{ width: '64px', height: '64px', marginBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: 'svg_emmanuel' }} />
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.15em' }}>Role A</div>
+                <div style={{ fontFamily: '"Playfair Display", serif', fontSize: '28px', fontWeight: 700, color: '#0A0A0A', marginTop: '12px' }}>Emmanuel</div>
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#888888', marginTop: '8px' }}>Business Logic</div>
                 <div style={{ width: '40px', height: '1px', backgroundColor: '#C8102E', margin: '24px 0' }} />
-                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', color: '#0A0A0A' }}>{card.resp}</div>
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', color: '#0A0A0A' }}>Owns the product logic, use case definition, and decision framework.</div>
               </div>
-            ))}
+              <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #0A0A0A', borderTop: '3px solid #C8102E', padding: '48px 32px', borderRadius: 0 }}>
+                <div style={{ width: '64px', height: '64px', marginBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: 'svg_sasha' }} />
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.15em' }}>Role B</div>
+                <div style={{ fontFamily: '"Playfair Display", serif', fontSize: '28px', fontWeight: 700, color: '#0A0A0A', marginTop: '12px' }}>Sasha</div>
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#888888', marginTop: '8px' }}>Workflow &amp; Risk</div>
+                <div style={{ width: '40px', height: '1px', backgroundColor: '#C8102E', margin: '24px 0' }} />
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', color: '#0A0A0A' }}>Designs the compliance workflow, risk scoring thresholds, and escalation protocols.</div>
+              </div>
+              <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #0A0A0A', borderTop: '3px solid #C8102E', padding: '48px 32px', borderRadius: 0 }}>
+                <div style={{ width: '64px', height: '64px', marginBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: 'svg_denis' }} />
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.15em' }}>Role C</div>
+                <div style={{ fontFamily: '"Playfair Display", serif', fontSize: '28px', fontWeight: 700, color: '#0A0A0A', marginTop: '12px' }}>Denis</div>
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#888888', marginTop: '8px' }}>Prototype &amp; Tools</div>
+                <div style={{ width: '40px', height: '1px', backgroundColor: '#C8102E', margin: '24px 0' }} />
+                <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', color: '#0A0A0A' }}>Builds and deploys the live prototype and manages the GitHub repository.</div>
+              </div>
           </div>
         </section>
 
