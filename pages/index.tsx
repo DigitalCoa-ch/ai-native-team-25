@@ -85,7 +85,7 @@ export default function Home() {
         <section id="overview" ref={setRef('overview')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 40px', position: 'relative' }}>
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.25em', marginBottom: '24px' }}>CROSS-BORDER FRAUD DETECTION — TEAM 25</div>
           <h1 style={{ fontFamily: '"Playfair Display", serif', fontSize: '80px', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, maxWidth: '800px', margin: 0 }}>The Fraud Detection Platform Built for Global Finance</h1>
-          <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '18px', color: '#888888', marginTop: '20px' }}>International Finance Track</div>
+          
           <div style={{ display: 'flex', gap: '16px', marginTop: '48px' }}>
             <a href="#how-it-works" style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#FFFFFF', backgroundColor: '#C8102E', padding: '16px 36px', textDecoration: 'none', borderRadius: 0 }}>Explore the Platform</a>
             <a href="https://github.com/DigitalCoa-ch/ai-native-team-25" target="_blank" rel="noopener noreferrer" style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#FFFFFF', backgroundColor: 'transparent', border: '1px solid #FFFFFF', padding: '16px 36px', textDecoration: 'none', borderRadius: 0 }}>View on GitHub</a>
@@ -212,7 +212,7 @@ export default function Home() {
 
         <section id="team" ref={setRef('team')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 40px' }}>
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>THE TEAM</div>
-          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#0A0A0A', textAlign: 'center', margin: 0, marginBottom: '80px' }}>Team 25 — International Finance Track</h2>
+          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#0A0A0A', textAlign: 'center', margin: 0, marginBottom: '80px' }}>Team 25</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', maxWidth: '900px', width: '100%' }}>
             {[{role:'Role A',name:'Emmanuel',desc:'Business Logic',resp:'Owns the product logic, use case definition, and decision framework.'},{role:'Role B',name:'Sasha',desc:'Workflow & Risk',resp:'Designs the compliance workflow, risk scoring thresholds, and escalation protocols.'},{role:'Role C',name:'Denis',desc:'Prototype & Tools',resp:'Builds and deploys the live prototype and manages the GitHub repository.'}].map((card) => (
               <div key={card.name} style={{ backgroundColor: '#FFFFFF', border: '1px solid #0A0A0A', borderTop: '3px solid #C8102E', padding: '48px 32px', borderRadius: 0 }}>
@@ -230,7 +230,7 @@ export default function Home() {
           <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', alignItems: 'center', gap: '40px' }}>
             <div>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '12px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Cross-Border Fraud Detection</div>
-              <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#888888', marginTop: '8px' }}>Team 25 — International Finance Track — Geneva Business School</div>
+              <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#888888', marginTop: '8px' }}>Team 25 — Geneva Business School</div>
             </div>
             <div style={{ display: 'flex', gap: '32px', justifyContent: 'center' }}>
               {['GitHub', 'Live App'].map((link) => (
