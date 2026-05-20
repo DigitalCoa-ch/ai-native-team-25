@@ -70,7 +70,7 @@ export default function Home() {
           justifyContent: 'space-between',
           padding: '0 40px',
         }}>
-          <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', fontWeight: 600, color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.15em' }}>FraudGuard</div>
+          <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', fontWeight: 600, color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.15em' }}>AMED</div>
           <div style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
             {['Overview', 'How It Works', 'Integration', 'Technology', 'Team'].map((link) => (
               <a key={link} href={`#${link.toLowerCase().replace(/ /g, '-')}`} style={{ fontFamily: '"Inter", sans-serif', fontSize: '12px', color: '#888888', textTransform: 'uppercase', letterSpacing: '0.1em', textDecoration: 'none', transition: 'color 0.2s ease' }}
