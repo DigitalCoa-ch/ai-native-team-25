@@ -139,9 +139,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="how-it-works" ref={setRef('how-it-works')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 40px' }}>
+        <section id="how-it-works" ref={setRef('how-it-works')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '64px 40px' }}>
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>HOW IT WORKS</div>
-          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '80px' }}>Four layers of intelligent detection</h2>
+          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '48px' }}>Four layers of intelligent detection</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '24px', maxWidth: '1000px', width: '100%' }}>
             {[{num:'01',title:'Behavioural Pattern Analysis',desc:'The system builds a unique behavioural baseline for every account — typical transaction amounts, geographies, time patterns, and counterparties. Any deviation from this baseline triggers a risk score calculation in real time.'},{num:'02',title:'Cross-Border Anomaly Detection',desc:'Using a multilayer neural network trained on millions of international transactions, the system identifies anomalies specific to cross-border flows — unusual currency conversions, high-risk corridor routing, and jurisdiction-hopping patterns.'},{num:'03',title:'Natural Language Risk Signals',desc:'The system scans transaction metadata, reference fields, and memo text using language processing to detect coded language, sanctioned entity references, and known fraud keywords across 14 languages.'},{num:'04',title:'Adaptive Learning Engine',desc:'Every confirmed fraud case retrains the model automatically. The system becomes more accurate over time, adapting to new fraud typologies without requiring manual rule updates from compliance teams.'}].map((card) => (
               <div key={card.num} style={{ backgroundColor: '#111111', borderLeft: '3px solid #C8102E', padding: '40px', borderRadius: 0 }}>
@@ -153,7 +153,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="integration" ref={setRef('integration')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', padding: '80px 40px' }}>
+        <section id="integration" ref={setRef('integration')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', padding: '64px 40px' }}>
           <div style={{ maxWidth: '1100px', width: '100%', margin: '0 auto', display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '80px', alignItems: 'center' }}>
             <div style={{ position: 'sticky', top: '100px', alignSelf: 'flex-start' }}>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '16px' }}>BANK INTEGRATION</div>
@@ -172,7 +172,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="technology" ref={setRef('technology')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 40px' }}>
+        <section id="technology" ref={setRef('technology')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '64px 40px' }}>
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>COUNTERPARTY INTELLIGENCE</div>
           <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', lineHeight: 1.2, margin: 0, marginBottom: '48px', maxWidth: '900px' }}>Know who you are doing business with — before the transaction clears</h2>
           <p style={{ fontFamily: '"Inter", sans-serif', fontSize: '17px', color: '#888888', lineHeight: 1.8, margin: 0, marginBottom: '48px', maxWidth: '700px', textAlign: 'center' }}>Before any cross-border transaction is approved, the platform builds a complete risk profile of the counterparty. This includes sanctions screening, politically exposed person checks, corporate ownership structure analysis, and adverse media monitoring across global news sources.</p>
@@ -201,7 +201,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px 40px' }}>
+        <section style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '64px 40px' }}>
           <div style={{ maxWidth: '1100px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
             <div>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '16px' }}>PLATFORM LOGIC</div>
@@ -215,7 +215,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ ...fadeStyle, backgroundColor: '#FFFFFF', padding: '0 40px 80px' }}>
+        <section style={{ ...fadeStyle, backgroundColor: '#FFFFFF', padding: '0 40px 48px' }}>
           <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0px' }}>
               <div style={{ borderLeft: '3px solid #0A0A0A', paddingLeft: '40px' }}>
@@ -241,9 +241,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 40px' }}>
+        <section style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '64px 40px' }}>
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>WHO IT SERVES</div>
-          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '80px' }}>Built for the institutions that move money across borders</h2>
+          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '48px' }}>Built for the institutions that move money across borders</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', maxWidth: '1100px', width: '100%' }}>
 <div style={{ backgroundColor: '#111111', borderTop: '3px solid #C8102E', padding: '40px 32px', borderRadius: 0 }}>
                 <div style={{ width: '48px', height: '48px', marginBottom: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: svg_bank }} />
@@ -268,9 +268,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="team" ref={setRef('team')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 40px' }}>
+        <section id="team" ref={setRef('team')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '64px 40px' }}>
           
-          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#0A0A0A', textAlign: 'center', margin: 0, marginBottom: '80px' }}>Our Team</h2>
+          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#0A0A0A', textAlign: 'center', margin: 0, marginBottom: '48px' }}>Our Team</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', maxWidth: '900px', width: '100%' }}>
 <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #0A0A0A', borderTop: '3px solid #C8102E', padding: '48px 32px', borderRadius: 0 }}>
                 <div style={{ width: '64px', height: '64px', marginBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: svg_emmanuel }} />
@@ -301,7 +301,7 @@ export default function Home() {
 
         
         {/* ─── PROTOTYPE STATUS SECTION ────────────────────────────────── */}
-        <section style={{ ...fadeStyle, backgroundColor: '#0A0A0A', padding: '80px 40px' }}>
+        <section style={{ ...fadeStyle, backgroundColor: '#0A0A0A', padding: '64px 40px' }}>
           <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
             <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px', textAlign: 'center' }}>PROTOTYPE STATUS</div>
             <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '44px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '64px', lineHeight: 1.2 }}>What we built, what is simulated, and what comes next</h2>
