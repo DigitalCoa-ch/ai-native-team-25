@@ -230,7 +230,7 @@ export default function Home() {
           <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', alignItems: 'center', gap: '40px' }}>
             <div>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '12px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Cross-Border Fraud Detection</div>
-              <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#888888', marginTop: '8px' }}>Geneva Business School</div>
+
             </div>
             <div style={{ display: 'flex', gap: '32px', justifyContent: 'center' }}>
               {['GitHub', 'Live App'].map((link) => (
