@@ -90,7 +90,7 @@ export default function Home() {
           <a href="https://team-25.apps.digitalcoa.ch" style={{ fontFamily: '"Inter", sans-serif', fontSize: '12px', color: '#FFFFFF', backgroundColor: '#C8102E', padding: '10px 20px', textDecoration: 'none', borderRadius: 0 }}>View Live App</a>
         </nav>
 
-        <section id="overview" ref={setRef('overview')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '100px 40px 80px', position: 'relative' }}>
+        <section id="overview" ref={setRef('overview')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 40px 60px', position: 'relative' }}>
           
           <span style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.25em', display: 'block', marginBottom: '24px' }}>INTERNATIONAL FINANCE TRACK — TEAM 25</span>
           <h1 style={{ fontFamily: '"Playfair Display", serif', fontSize: '80px', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, maxWidth: '800px', margin: 0 }}>The Fraud Detection Platform Built for Global Finance</h1>
@@ -123,8 +123,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 40px' }}>
-          <div style={{ maxWidth: '1100px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
+        <section style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '48px 40px' }}>
+          <div style={{ maxWidth: '1100px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'center' }}>
             <div>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '16px' }}>THE PROBLEM</div>
               <div style={{ width: '40px', height: '1px', backgroundColor: '#C8102E', margin: '16px 0 32px' }} />
@@ -132,7 +132,7 @@ export default function Home() {
             </div>
             <div>
               <p style={{ fontFamily: '"Inter", sans-serif', fontSize: '17px', color: '#0A0A0A', lineHeight: 1.8, margin: 0 }}>Traditional fraud detection systems struggle to identify suspicious international transactions in real time. Fraud patterns constantly evolve across countries, currencies, and platforms — and legacy systems cannot keep pace. Cross-border transactions involve multiple currencies, jurisdictions, and regulatory frameworks, making rule-based detection dangerously insufficient.</p>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '32px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '16px' }}>
                 <div><div style={{ fontFamily: '"Playfair Display", serif', fontSize: '48px', fontWeight: 700, color: '#C8102E' }}>73%</div><div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', color: '#888888', marginTop: '8px', lineHeight: 1.5 }}>of fraud goes undetected by legacy systems</div></div>
                 <div><div style={{ fontFamily: '"Playfair Display", serif', fontSize: '48px', fontWeight: 700, color: '#C8102E' }}>2.4s</div><div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', color: '#888888', marginTop: '8px', lineHeight: 1.5 }}>average time the platform needs to flag a suspicious transaction</div></div>
               </div>
@@ -140,9 +140,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="how-it-works" ref={setRef('how-it-works')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '60px 40px' }}>
+        <section id="how-it-works" ref={setRef('how-it-works')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '48px 40px' }}>
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>HOW IT WORKS</div>
-          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '48px' }}>Four layers of intelligent detection</h2>
+          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '24px' }}>Four layers of intelligent detection</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '24px', maxWidth: '1000px', width: '100%' }}>
             {[{num:'01',title:'Behavioural Pattern Analysis',desc:'The system builds a unique behavioural baseline for every account — typical transaction amounts, geographies, time patterns, and counterparties. Any deviation from this baseline triggers a risk score calculation in real time.'},{num:'02',title:'Cross-Border Anomaly Detection',desc:'Using a multilayer neural network trained on millions of international transactions, the system identifies anomalies specific to cross-border flows — unusual currency conversions, high-risk corridor routing, and jurisdiction-hopping patterns.'},{num:'03',title:'Natural Language Risk Signals',desc:'The system scans transaction metadata, reference fields, and memo text using language processing to detect coded language, sanctioned entity references, and known fraud keywords across 14 languages.'},{num:'04',title:'Adaptive Learning Engine',desc:'Every confirmed fraud case retrains the model automatically. The system becomes more accurate over time, adapting to new fraud typologies without requiring manual rule updates from compliance teams.'}].map((card) => (
               <div key={card.num} style={{ backgroundColor: '#111111', borderLeft: '3px solid #C8102E', padding: '40px', borderRadius: 0 }}>
@@ -154,8 +154,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="integration" ref={setRef('integration')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', padding: '60px 40px' }}>
-          <div style={{ maxWidth: '1100px', width: '100%', margin: '0 auto', display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '48px', alignItems: 'center' }}>
+        <section id="integration" ref={setRef('integration')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', padding: '48px 40px' }}>
+          <div style={{ maxWidth: '1100px', width: '100%', margin: '0 auto', display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '24px', alignItems: 'center' }}>
             <div style={{ position: 'sticky', top: '100px', alignSelf: 'flex-start' }}>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '16px' }}>BANK INTEGRATION</div>
               <div style={{ width: '40px', height: '1px', backgroundColor: '#C8102E', margin: '16px 0 32px' }} />
@@ -173,10 +173,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="technology" ref={setRef('technology')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '60px 40px' }}>
+        <section id="technology" ref={setRef('technology')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '48px 40px' }}>
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>COUNTERPARTY INTELLIGENCE</div>
-          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', lineHeight: 1.2, margin: 0, marginBottom: '48px', maxWidth: '900px' }}>Know who you are doing business with — before the transaction clears</h2>
-          <p style={{ fontFamily: '"Inter", sans-serif', fontSize: '17px', color: '#888888', lineHeight: 1.8, margin: 0, marginBottom: '48px', maxWidth: '700px', textAlign: 'center' }}>Before any cross-border transaction is approved, the platform builds a complete risk profile of the counterparty. This includes sanctions screening, politically exposed person checks, corporate ownership structure analysis, and adverse media monitoring across global news sources.</p>
+          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', lineHeight: 1.2, margin: 0, marginBottom: '24px', maxWidth: '900px' }}>Know who you are doing business with — before the transaction clears</h2>
+          <p style={{ fontFamily: '"Inter", sans-serif', fontSize: '17px', color: '#888888', lineHeight: 1.8, margin: 0, marginBottom: '24px', maxWidth: '700px', textAlign: 'center' }}>Before any cross-border transaction is approved, the platform builds a complete risk profile of the counterparty. This includes sanctions screening, politically exposed person checks, corporate ownership structure analysis, and adverse media monitoring across global news sources.</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="400" height="160" viewBox="0 0 400 160" fill="none" style={{ margin: '0 auto 40px', display: 'block', opacity: 0.6 }}>
             <circle cx="200" cy="80" r="12" stroke="#C8102E" strokeWidth="1.5"/>
             <circle cx="80" cy="40" r="8" stroke="#C8102E" strokeWidth="1.5"/>
@@ -202,8 +202,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 40px' }}>
-          <div style={{ maxWidth: '1100px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center' }}>
+        <section style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '48px 40px' }}>
+          <div style={{ maxWidth: '1100px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', alignItems: 'center' }}>
             <div>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '16px' }}>PLATFORM LOGIC</div>
               <div style={{ width: '40px', height: '1px', backgroundColor: '#C8102E', margin: '16px 0 32px' }} />
@@ -216,7 +216,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ ...fadeStyle, backgroundColor: '#FFFFFF', padding: '0 40px 48px' }}>
+        <section style={{ ...fadeStyle, backgroundColor: '#FFFFFF', padding: '0 40px 32px' }}>
           <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0px' }}>
               <div style={{ borderLeft: '3px solid #0A0A0A', paddingLeft: '40px' }}>
@@ -235,16 +235,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ backgroundColor: '#C8102E', padding: '64px 40px' }}>
+        <section style={{ backgroundColor: '#C8102E', padding: '48px 40px' }}>
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <span style={{ fontFamily: '"Playfair Display", serif', fontSize: '28px', fontWeight: 700, color: '#FFFFFF', display: 'block', marginBottom: '16px' }}>Key dependency:</span>
             <p style={{ fontFamily: '"Inter", sans-serif', fontSize: '17px', color: '#FFFFFF', lineHeight: 1.7, margin: 0 }}>The system depends on high-quality, continuously updated international transaction data. Incomplete or biased data could significantly reduce fraud detection accuracy. Data partnerships with SWIFT, local central banks, and licensed data providers are essential to system performance.</p>
           </div>
         </section>
 
-        <section style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '60px 40px' }}>
+        <section style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '48px 40px' }}>
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>WHO IT SERVES</div>
-          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '48px' }}>Built for the institutions that move money across borders</h2>
+          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '24px' }}>Built for the institutions that move money across borders</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', maxWidth: '1100px', width: '100%' }}>
 <div style={{ backgroundColor: '#111111', borderTop: '3px solid #C8102E', padding: '40px 32px', borderRadius: 0 }}>
                 <div style={{ width: '48px', height: '48px', marginBottom: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: svg_bank }} />
@@ -269,10 +269,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="team" ref={setRef('team')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#FFFFFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '60px 40px' }}>
+        <section id="team" ref={setRef('team')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#FFFFFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '48px 40px' }}>
           
           <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '16px' }}>THE TEAM</div>
-          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#0A0A0A', textAlign: 'center', margin: 0, marginBottom: '48px' }}>Our Team</h2>
+          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#0A0A0A', textAlign: 'center', margin: 0, marginBottom: '24px' }}>Our Team</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', maxWidth: '900px', width: '100%' }}>
 <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #0A0A0A', borderTop: '3px solid #C8102E', padding: '48px 32px', borderRadius: 0 }}>
                 <div style={{ width: '64px', height: '64px', marginBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} dangerouslySetInnerHTML={{ __html: svg_emmanuel }} />
@@ -303,10 +303,10 @@ export default function Home() {
 
         
         {/* ─── PROTOTYPE STATUS SECTION ────────────────────────────────── */}
-        <section style={{ ...fadeStyle, backgroundColor: '#0A0A0A', padding: '64px 40px' }}>
+        <section style={{ ...fadeStyle, backgroundColor: '#0A0A0A', padding: '48px 40px' }}>
           <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
             <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px', textAlign: 'center' }}>PROTOTYPE STATUS</div>
-            <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '44px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '64px', lineHeight: 1.2 }}>What we built, what is simulated, and what comes next</h2>
+            <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '44px', fontWeight: 700, color: '#FFFFFF', textAlign: 'center', margin: 0, marginBottom: '32px', lineHeight: 1.2 }}>What we built, what is simulated, and what comes next</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', marginBottom: '0px' }}>
               <div style={{ backgroundColor: '#111111', borderTop: '3px solid #C8102E', padding: '32px', borderRadius: 0 }}>
                 <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '16px', fontWeight: 600, color: '#FFFFFF', marginBottom: '16px' }}>What Changed</div>
