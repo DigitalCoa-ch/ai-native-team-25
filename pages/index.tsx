@@ -83,7 +83,7 @@ export default function Home() {
         </nav>
 
         <section id="overview" ref={setRef('overview')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 40px', position: 'relative' }}>
-          <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.25em', marginBottom: '24px' }}>INTERNATIONAL FINANCE TRACK — TEAM 25</div>
+          
           <h1 style={{ fontFamily: '"Playfair Display", serif', fontSize: '80px', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, maxWidth: '800px', margin: 0 }}>The Fraud Detection Platform Built for Global Finance</h1>
           
           <div style={{ display: 'flex', gap: '16px', marginTop: '48px' }}>
