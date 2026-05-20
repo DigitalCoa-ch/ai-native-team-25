@@ -78,7 +78,7 @@ export default function Home() {
           justifyContent: 'space-between',
           padding: '0 40px',
         }}>
-          <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', fontWeight: 600, color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.15em' }}>FraudGuard</div>
+          <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', fontWeight: 600, color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.15em' }}>AMED</div>
           <div style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
             {['Overview', 'How It Works', 'Integration', 'Technology', 'Team'].map((link) => (
               <a key={link} href={`#${link.toLowerCase().replace(/ /g, '-')}`} style={{ fontFamily: '"Inter", sans-serif', fontSize: '12px', color: '#888888', textTransform: 'uppercase', letterSpacing: '0.1em', textDecoration: 'none', transition: 'color 0.2s ease' }}
@@ -92,7 +92,6 @@ export default function Home() {
 
         <section id="overview" ref={setRef('overview')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#0A0A0A', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 40px 60px', position: 'relative' }}>
           
-          <span style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.25em', display: 'block', marginBottom: '24px' }}>INTERNATIONAL FINANCE TRACK — TEAM 25</span>
           <h1 style={{ fontFamily: '"Playfair Display", serif', fontSize: '80px', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, maxWidth: '800px', margin: 0 }}>The Fraud Detection Platform Built for Global Finance</h1>
           <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" fill="none" style={{ position: 'absolute', right: '-100px', top: '50%', transform: 'translateY(-50%)', opacity: 0.08, pointerEvents: 'none' }}>
             <circle cx="300" cy="300" r="200" stroke="#C8102E" strokeWidth="1"/>
@@ -271,7 +270,6 @@ export default function Home() {
 
         <section id="team" ref={setRef('team')} style={{ ...fadeStyle, minHeight: 'auto', backgroundColor: '#FFFFFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '48px 40px' }}>
           
-          <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '16px' }}>THE TEAM</div>
           <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#0A0A0A', textAlign: 'center', margin: 0, marginBottom: '24px' }}>Our Team</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', maxWidth: '900px', width: '100%' }}>
 <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #0A0A0A', borderTop: '3px solid #C8102E', padding: '48px 32px', borderRadius: 0 }}>
@@ -326,7 +324,6 @@ export default function Home() {
 
         <section style={{ backgroundColor: '#C8102E', padding: '40px' }}>
           <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-            <p style={{ fontFamily: '"Playfair Display", serif', fontSize: '22px', color: '#FFFFFF', lineHeight: 1.5, margin: 0 }}>Our prototype proves that the system can detect suspicious international transactions by analyzing transaction patterns while the human still controls all final fraud decisions.</p>
           </div>
         </section>
 <footer style={{ backgroundColor: '#0A0A0A', borderTop: '1px solid #C8102E', padding: '48px 40px' }}>
