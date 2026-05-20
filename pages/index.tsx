@@ -123,8 +123,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px 40px' }}>
-          <div style={{ maxWidth: '1100px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '120px', alignItems: 'center' }}>
+        <section style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '64px 40px' }}>
+          <div style={{ maxWidth: '1100px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
             <div>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '16px' }}>THE PROBLEM</div>
               <div style={{ width: '40px', height: '1px', backgroundColor: '#C8102E', margin: '16px 0 32px' }} />
@@ -132,7 +132,7 @@ export default function Home() {
             </div>
             <div>
               <p style={{ fontFamily: '"Inter", sans-serif', fontSize: '17px', color: '#0A0A0A', lineHeight: 1.8, margin: 0 }}>Traditional fraud detection systems struggle to identify suspicious international transactions in real time. Fraud patterns constantly evolve across countries, currencies, and platforms — and legacy systems cannot keep pace. Cross-border transactions involve multiple currencies, jurisdictions, and regulatory frameworks, making rule-based detection dangerously insufficient.</p>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', marginTop: '48px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '32px' }}>
                 <div><div style={{ fontFamily: '"Playfair Display", serif', fontSize: '48px', fontWeight: 700, color: '#C8102E' }}>73%</div><div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', color: '#888888', marginTop: '8px', lineHeight: 1.5 }}>of fraud goes undetected by legacy systems</div></div>
                 <div><div style={{ fontFamily: '"Playfair Display", serif', fontSize: '48px', fontWeight: 700, color: '#C8102E' }}>2.4s</div><div style={{ fontFamily: '"Inter", sans-serif', fontSize: '13px', color: '#888888', marginTop: '8px', lineHeight: 1.5 }}>average time the platform needs to flag a suspicious transaction</div></div>
               </div>
@@ -155,7 +155,7 @@ export default function Home() {
         </section>
 
         <section id="integration" ref={setRef('integration')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', padding: '64px 40px' }}>
-          <div style={{ maxWidth: '1100px', width: '100%', margin: '0 auto', display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '80px', alignItems: 'center' }}>
+          <div style={{ maxWidth: '1100px', width: '100%', margin: '0 auto', display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '48px', alignItems: 'center' }}>
             <div style={{ position: 'sticky', top: '100px', alignSelf: 'flex-start' }}>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '16px' }}>BANK INTEGRATION</div>
               <div style={{ width: '40px', height: '1px', backgroundColor: '#C8102E', margin: '16px 0 32px' }} />
@@ -164,7 +164,7 @@ export default function Home() {
             </div>
             <div>
               {[{step:'1',title:'API Connection',desc:'The platform connects to your core banking system via REST API or ISO 20022 message format. No database migration required. Setup time: under 48 hours.'},{step:'2',title:'KYC & Background Profiling',desc:'For every new counterparty, the system performs an automated background check — pulling from international sanctions lists (OFAC, EU, UN), PEP databases, adverse media feeds, and corporate registry data to build a full risk profile before the first transaction is approved.'},{step:'3',title:'Real-Time Transaction Screening',desc:'Every transaction is scored within 2.4 seconds. Scores above the configurable threshold are automatically flagged and routed to a human compliance officer for review.'},{step:'4',title:'Compliance Reporting',desc:'Flagged cases are automatically documented with a full audit trail — transaction metadata, reasoning, risk score breakdown, and recommended action — ready for regulatory submission.'}].map((item) => (
-                <div key={item.step} style={{ display: 'grid', gridTemplateColumns: '80px 1fr', gap: '24px', marginBottom: '40px', alignItems: 'flex-start' }}>
+                <div key={item.step} style={{ display: 'grid', gridTemplateColumns: '80px 1fr', gap: '24px', marginBottom: '24px', alignItems: 'flex-start' }}>
                   <div style={{ fontFamily: '"Playfair Display", serif', fontSize: '32px', fontWeight: 700, color: '#C8102E' }}>{item.step}</div>
                   <div><div style={{ fontFamily: '"Inter", sans-serif', fontSize: '16px', fontWeight: 600, color: '#0A0A0A', marginBottom: '8px' }}>{item.title}</div><div style={{ fontFamily: '"Inter", sans-serif', fontSize: '14px', color: '#888888', lineHeight: 1.6 }}>{item.desc}</div></div>
                 </div>
@@ -203,7 +203,7 @@ export default function Home() {
         </section>
 
         <section style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '64px 40px' }}>
-          <div style={{ maxWidth: '1100px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
+          <div style={{ maxWidth: '1100px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center' }}>
             <div>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '16px' }}>PLATFORM LOGIC</div>
               <div style={{ width: '40px', height: '1px', backgroundColor: '#C8102E', margin: '16px 0 32px' }} />
