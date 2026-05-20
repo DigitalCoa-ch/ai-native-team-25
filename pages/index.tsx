@@ -37,7 +37,7 @@ export default function Home() {
     <>
       <Head>
         <title>FraudGuard — Cross-Border Fraud Detection</title>
-        <meta name="description" content="AI Native Enterprise — Team 25" />
+        <meta name="description" content="Cross-Border Fraud Detection" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
@@ -211,8 +211,8 @@ export default function Home() {
         </section>
 
         <section id="team" ref={setRef('team')} style={{ ...fadeStyle, minHeight: '100vh', backgroundColor: '#FFFFFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 40px' }}>
-          <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#C8102E', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>THE TEAM</div>
-          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#0A0A0A', textAlign: 'center', margin: 0, marginBottom: '80px' }}>Team 25</h2>
+          
+          <h2 style={{ fontFamily: '"Playfair Display", serif', fontSize: '52px', fontWeight: 700, color: '#0A0A0A', textAlign: 'center', margin: 0, marginBottom: '80px' }}>Our Team</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', maxWidth: '900px', width: '100%' }}>
             {[{role:'Role A',name:'Emmanuel',desc:'Business Logic',resp:'Owns the product logic, use case definition, and decision framework.'},{role:'Role B',name:'Sasha',desc:'Workflow & Risk',resp:'Designs the compliance workflow, risk scoring thresholds, and escalation protocols.'},{role:'Role C',name:'Denis',desc:'Prototype & Tools',resp:'Builds and deploys the live prototype and manages the GitHub repository.'}].map((card) => (
               <div key={card.name} style={{ backgroundColor: '#FFFFFF', border: '1px solid #0A0A0A', borderTop: '3px solid #C8102E', padding: '48px 32px', borderRadius: 0 }}>
@@ -230,7 +230,7 @@ export default function Home() {
           <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', alignItems: 'center', gap: '40px' }}>
             <div>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '12px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Cross-Border Fraud Detection</div>
-              <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#888888', marginTop: '8px' }}>Team 25 — Geneva Business School</div>
+              <div style={{ fontFamily: '"Inter", sans-serif', fontSize: '11px', color: '#888888', marginTop: '8px' }}>Geneva Business School</div>
             </div>
             <div style={{ display: 'flex', gap: '32px', justifyContent: 'center' }}>
               {['GitHub', 'Live App'].map((link) => (
